@@ -1,0 +1,78 @@
+// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами.
+// Напишите программу, которая покажет количество чётных чисел в массиве.
+// [345, 897, 568, 234] -> 2
+//  int[] GetNumbers(int size, int minValue, int maxValue)
+//  {
+//  int[] Array = new int[size];
+//  for (int i = 0; i < Array.Length; i++)
+//  {
+//      Array[i] = new Random().Next(minValue,maxValue + 1);
+//  }
+//  return Array;
+//  }
+//  int[] resultArray = GetNumbers(5, 100, 999);
+//  Console.WriteLine(String.Join("; ", resultArray));
+//Программа:
+//  int pozitiv = 0;
+//  for (int i = 0; i < resultArray.Length; i++)
+//  {
+//      if(resultArray[i] % 2 == 0)
+//      {
+//        pozitiv++; 
+//      }
+//  }
+//   Console.WriteLine($"Кол-во четных чисел: {pozitiv}");
+
+
+
+
+
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
+// int[] GetNumbers(int size, int minValue, int maxValue)
+//   {
+//   int[] Array = new int[size];
+//   for (int i = 0; i < Array.Length; i++)
+//   {
+//       Array[i] = new Random().Next(minValue,maxValue + 1);
+//   }
+//   return Array;
+//   }
+//   int[] resultArray = GetNumbers(4, -20, 91);
+//   Console.WriteLine(String.Join("; ", resultArray));
+//Программа:
+// int summNegativ = 0;
+// for (int i = 1; i < resultArray.Length; i+=2)
+// {
+//   summNegativ += resultArray[i];
+// }
+// Console.WriteLine($"Сумма нечетных чисел = {summNegativ}");
+
+
+
+
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// [3 7 22 2 78] -> 76
+// int[] GetNumbers(int size, int minValue, int maxValue)
+//   {
+//   int[] Array = new int[size];
+//   for (int i = 0; i < Array.Length; i++)
+//   {
+//       Array[i] = new Random().Next(minValue,maxValue + 1);
+//   }
+//   return Array;
+//   }
+//   int[] resultArray = GetNumbers(5, 1, 100);
+//   Console.WriteLine(String.Join("; ", resultArray));
+// //Программа:
+// int max = resultArray[0];
+// int min = resultArray[0];
+// foreach (int i in resultArray) //поиск максимального и минимального значения
+// {
+//   if (i < min) min = i;
+// if (i > max) max = i;
+// }
+// Console.WriteLine($"{max-min}");
