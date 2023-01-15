@@ -1,0 +1,35 @@
+// Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1.
+// Выполнить с помощью рекурсии.
+// N = 5 -> "5, 4, 3, 2, 1"
+// N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+// double n = Convert.ToInt32(Console.ReadLine());
+//  string PrintNum(double end, int start)
+// {
+//     //Базовый случай
+//     if(start == end) return end.ToString();
+//     //Рекурсивный случай
+//     return(end + "," + PrintNum(end - 1,start));
+// }
+// Console.WriteLine(PrintNum(n,1));
+
+
+// Задача 66: Задайте значения M и N. Напишите программу,
+// которая найдёт сумму натуральных элементов в промежутке от M до N.
+// M = 1; N = 15 -> 120
+// M = 4; N = 8. -> 30
+// Console.WriteLine("введите M: ");
+// int M = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите N: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+ 
+// void SumNumbers(int a, int b)
+// {
+//     if (a == 0 && b == 0) return ;
+//     if (a < b && a > b)  return (a * SumNumbers(a + 1, b)); 
+//     Console.Write($"{a} ");
+//     if (a==b)
+//     {
+//         Console.Write($"{a}"); return;
+//     }
+// }
+// SumNumbers(M, N);
